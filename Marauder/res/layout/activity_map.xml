@@ -1,0 +1,60 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <!-- The main content view -->
+    <marauder.src.ZoomableRelativeLayout
+        android:id="@+id/zoomableRelLayout"
+        android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"> 
+		<ImageView
+		       	android:id="@+id/imgMapBackground"
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent"
+	        	android:scaleType="fitCenter" 
+		        android:src="@drawable/mapbackground"/>
+		<ImageView
+		       	android:id="@+id/imgClassrooms"
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent"
+	        	android:scaleType="fitCenter" 
+		        android:src="@drawable/classrooms"/>
+		<ImageView
+		       	android:id="@+id/imgElevator"
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent"
+	        	android:scaleType="fitCenter" 
+		        android:src="@drawable/elevator"/>
+		<ImageView
+		       	android:id="@+id/imgRestrooms"
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent"
+	        	android:scaleType="fitCenter" 
+		        android:src="@drawable/restrooms"/>
+		<ImageView
+		       	android:id="@+id/imgStairs"
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent"
+	        	android:scaleType="fitCenter" 
+		        android:src="@drawable/stairs"/>
+		 <ImageView
+		       	android:id="@+id/imgDensity"
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent"
+	        	android:scaleType="fitCenter" 
+		        android:src="@drawable/density"/>
+	</marauder.src.ZoomableRelativeLayout>
+    
+    <!-- The navigation drawer -->
+    <ExpandableListView android:id="@+id/lvExp"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#111"/>
+    
+</android.support.v4.widget.DrawerLayout>
